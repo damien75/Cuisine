@@ -1,0 +1,513 @@
+/* 
+    Document   : StyleSheet
+    Created on : 26 févr. 2013, 22:18:28
+    Author     : Sara-Fleur
+    Description:
+        Purpose of the stylesheet follows.
+
+*/
+
+
+/* Ensemble du site*/
+#content{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+    width: 52%;
+    height: 100%;
+}
+
+root { 
+    display: block;
+}
+#global{
+    background-color: #d8baba;
+}
+
+.alerte{
+        font-family: Autre;
+        text-align: center;
+        font-size: 50px;
+        padding: 20px;
+	background: #F4523D;
+        box-shadow: 1px 1px 10px #A83318 inset, 0 1px 0 rgba( 255, 255, 255, 0.4);
+	background: linear-gradient( #F4523D, #B43300);
+	}
+
+/*en tete*/
+
+#logo{
+    display: inline-block;
+    width : 18.7%;
+    height: 200px;
+}
+
+
+@font-face {
+    font-family: "Titre";
+    src: url('Polices/DrSugiyama-Regular.ttf');
+}
+
+.title{
+    display: inline-block;
+    font-size: 100px;
+    vertical-align: top;
+    text-align: center;
+    height: 200px;
+    font-family: Titre;
+    background-color: #e25050;
+    width : 81.3%;
+}
+
+/*login*/
+
+#connexion{
+    height: 110px;
+    width:100%;
+    border-radius: 10px;
+    border-style: inset;
+    text-align: center;
+    line-height: 0.1%;
+    box-shadow: 1px 1px 10px #1E516B inset, 0 1px 0 rgba( 255, 255, 255, 0.4);
+    background: #3C98CF;
+    background: linear-gradient( #3C98CF, #2D74A0);
+}
+#connexion:hover {
+	background: #3CA1D3;
+	background: linear-gradient( #3CA1D3, #3386AF);
+}
+
+#lateraldroit.hover{
+    background-color: #a9ffff;
+}
+#lateral{
+    height: 100%;
+    width: 18.3%;
+    display:inline-block;
+}
+
+/*Barre latérale droite*/
+
+@font-face {
+    font-family: "TitreBarreDroite";
+    src: url('Polices/Boogaloo-Regular.ttf');
+}
+@font-face {
+    font-family: "NomRecettesBarreDroite";
+    src: url('Polices/OriginalSurfer-Regular.ttf');
+}
+@font-face {
+    font-family: "Autre";
+    src: url('Polices/Playball-Regular.ttf');
+}
+
+#new{
+    color:#333; 
+    padding: 5px;
+    text-align: center;
+    font-size: x-large;
+    font-family: TitreBarreDroite;
+    box-shadow: 1px 1px 10px #285419 inset, 0 1px 0 rgba( 255, 255, 255, 0.4);
+    background: #91BD09; 
+    background: linear-gradient( #91BD09, #4E9939);
+}
+
+#lateraldroit{
+    display:inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+    width :25%;
+    height:100%;
+    font-family: NomRecettesBarreDroite;
+    text-shadow: 0px 2px 0px rgba( 255, 255, 255, 0.8);
+    background: #F5F5F5;
+    background: linear-gradient( #FFF, #CCC);
+    box-shadow: 1px 1px 10px #CCC inset, 0 1px 0 rgba( 255, 255, 255, 0.4);
+}
+
+.menuItemn{
+
+    width:80%;
+    height:100px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    margin-top: 10px;
+    margin-left: 10%;
+    border-radius:7px; 
+    box-shadow: 0 0 1px rgba( 0, 0, 0, 0.2), 0 -1px 0 rgba( 255, 255, 255, 0.1); 
+    color:#ffffdb;
+    text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.3);	
+    background: #444; 
+    background: linear-gradient( #555, #2C2C2C);
+}
+
+.menuItemn:hover{
+	background: #555;
+	background: linear-gradient( #777, #333);	
+	}
+
+/* Présentation recettes*/
+
+.cadrerecette{
+    margin: 20px;
+    padding: 40px;
+    background-image: url("Images/Ardoise.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color:white;
+    font-size:20px;
+    border-radius: 50px;
+    margin-top: 40px;
+}
+
+@font-face {
+    font-family: "Craie";
+    src: url('Polices/Chalk-hand.ttf');
+}
+
+
+.contourutilisateur{
+    border : solid grey;
+    padding: 5px;
+    display: inline-block;
+    background-color: white;
+    color:black;
+    border-radius: 10px;
+}
+
+.blocrecette{   
+    padding: 10px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+    a { 
+        text-decoration: none; 
+         
+    } 
+
+
+
+/* Menus*/
+
+/*Barre latérale gauche*/
+
+.menuItem {
+    	width:100%;
+        height:50px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 50px;
+	float:left; 
+	margin-top: 10px;
+	font-size: 1.3em; 
+	border-radius:7px; 
+	box-shadow: 0 0 1px rgba( 0, 0, 0, 0.2), 0 -1px 0 rgba( 255, 255, 255, 0.1); 
+	color:#ffffdb;
+	text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.3);	
+        background: #444; 
+	background: linear-gradient( #555, #2C2C2C);
+	}
+
+.menuItem:hover {
+	background: #555;
+	background: linear-gradient( #777, #333);	
+	}	
+
+div.title p{
+    margin-top: 21px;
+}
+
+/*Menu Item déroulant*/
+
+.sectionMenu{
+    vertical-align:top;
+    padding:0px;
+    margin:2px;
+    width:100%;
+    border-radius: 10px;
+    
+}
+.menuItemDeroulant{
+    	width:100%;
+        height:50px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 50px;
+	float:right; 
+	margin-top: 10px;
+	font-size: 1.3em; 
+	border-radius:7px; 
+	box-shadow: 0 0 1px rgba( 0, 0, 0, 0.2), 0 -1px 0 rgba( 255, 255, 255, 0.1); 
+        color:#ffffdb;
+	text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.3);	
+        background: #444; 
+	background: linear-gradient( #555, #2C2C2C);
+}
+
+
+ 
+.sousMenu{
+    	width:100%;
+        height:50px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 50px;
+	margin-top: 10px;
+	font-size: 1.3em; 
+	border-radius:7px; 
+	box-shadow: 0 0 1px rgba( 0, 0, 0, 0.2), 0 -1px 0 rgba( 255, 255, 255, 0.1); 
+        color:#333; 
+	text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.3);	
+    	background: #C8C8C8;
+	background: linear-gradient( #C8C8C8, #A0A0A0);
+}
+ 
+.sousMenu:hover{
+	background: #D8D8D8;
+	background: linear-gradient( #D8D8D8, #B0B0B0);
+}
+ 
+ 
+.menuItemDeroulant:hover{
+	background: #555;
+	background: linear-gradient( #777, #333);	
+}
+ 
+
+ 
+/*Formulaires*/
+.ui-autocomplete {
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+* html .ui-autocomplete {
+    height: 100px;
+  }
+fieldset {
+  width : 98%;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+ 
+legend {
+  padding: 0px 3px;
+  font-weight: bold;
+  font-style: italic;
+
+}
+ 
+label {
+  width: 110px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 6px;
+}
+ 
+em {
+  font-weight: bold;
+  font-style: normal;
+  color: #f00;
+}
+ 
+input:focus {
+  background: #eaeaea;
+}
+ 
+input {
+  width: 220px;
+}
+
+ 
+textarea {
+  height: 100px;
+  width: 80%;
+}
+ 
+select {
+  width: 254px;
+}
+ 
+input[type=checkbox] {
+  width: 10px;
+}
+ 
+input[name=valider] {
+  width: 150px;
+  padding: 10px;
+}
+
+input[type=submit]{
+    width : 150px;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px #CCC inset, 0 1px 0 rgba( 255, 255, 255, 0.4);  
+    color:#333;
+    background: #F5F5F5;
+    text-shadow: 0px 2px 0px rgba( 255, 255, 255, 0.8);	
+    background: linear-gradient( #FFF, #CCC);
+}
+
+input[type=submit]:hover {
+    background: #F8F8F8;
+    background: linear-gradient( #F8F8F8, #3386AF);
+}
+
+input[id=ajoutIngredients]{
+    width : 150px;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px #CCC inset, 0 1px 0 rgba( 255, 255, 255, 0.4);  
+    color:#333;
+    background: #F5F5F5;
+    text-shadow: 0px 2px 0px rgba( 255, 255, 255, 0.8);	
+    background: linear-gradient( #FFF, #CCC);
+}
+
+
+input[id=ajoutIngredient]{
+    width : 150px;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px #CCC inset, 0 1px 0 rgba( 255, 255, 255, 0.4);  
+    color:#333;
+    background: #F5F5F5;
+    text-shadow: 0px 2px 0px rgba( 255, 255, 255, 0.8);	
+    background: linear-gradient( #FFF, #CCC);
+}
+
+
+input[id=ajoutEtape]{
+    width : 150px;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px #CCC inset, 0 1px 0 rgba( 255, 255, 255, 0.4);  
+    color:#333;
+    background: #F5F5F5;
+    text-shadow: 0px 2px 0px rgba( 255, 255, 255, 0.8);	
+    background: linear-gradient( #FFF, #CCC);
+}
+
+input[name=login]{
+    width : 100px;
+}
+
+input[name=register]{
+    width : 100px;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px #CCC inset, 0 1px 0 rgba( 255, 255, 255, 0.4);  
+    color:#333;
+    background: #F5F5F5;
+    text-shadow: 0px 2px 0px rgba( 255, 255, 255, 0.8);	
+    background: linear-gradient( #FFF, #CCC);
+}
+
+input[name=register]:hover {
+    background: #F8F8F8;
+    background: linear-gradient( #F8F8F8, #3386AF);
+}
+
+input[name=account]{
+    width : 100px;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px #CCC inset, 0 1px 0 rgba( 255, 255, 255, 0.4);  
+    color:#333;
+    background: #F5F5F5;
+    text-shadow: 0px 2px 0px rgba( 255, 255, 255, 0.8);	
+    background: linear-gradient( #FFF, #CCC);
+}
+
+input[name=account]:hover {
+    background: #F8F8F8;
+    background: linear-gradient( #F8F8F8, #3386AF);
+}
+
+input[id=login]{
+    width : 100px;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px #CCC inset, 0 1px 0 rgba( 255, 255, 255, 0.4);  
+    color:#333;
+    background: #F5F5F5;
+    text-shadow: 0px 2px 0px rgba( 255, 255, 255, 0.8);	
+    background: linear-gradient( #FFF, #CCC);
+}
+
+input[id=login]:hover {
+    background: #F8F8F8;
+    background: linear-gradient( #F8F8F8, #3386AF);
+}
+        
+input[id=register]{
+    width : 100px;
+    display: inline-block;
+}
+input[name=password]{
+    width : 100px;
+}
+
+input[name=like]{
+    width : 250px;
+    padding:10px;
+    background-color: grey;
+    border-radius: 20px;
+}
+input[name=like]:hover{
+    background-color: red;
+}
+
+input[name=suivant]{
+	font-size: 0.8em; 
+        width:100px;
+	padding:8px 0; 
+	text-align:center; 
+	display: inline-block; 
+	float:right; 
+	margin:0 15px 15px 0;  
+	border-radius:7px; 
+	box-shadow: 1px 1px 10px #CCC inset, 0 1px 0 rgba( 255, 255, 255, 0.4); 
+	font-size: 0.85em; 
+	color:#333;
+    	background: #F5F5F5;
+	text-shadow: 0px 2px 0px rgba( 255, 255, 255, 0.8);	
+        background: linear-gradient( #FFF, #CCC);
+}
+
+input[name=suivant]:hover{
+        background: #F8F8F8;
+}
+
+input[name=precedent]{
+	font-size: 0.8em; 
+        width:100px;
+	padding:8px 0; 
+	text-align:center; 
+	display: inline-block; 
+	float:left;
+	margin:0 15px 15px 16px; 
+	border-radius:7px; 
+	box-shadow: 1px 1px 10px #CCC inset, 0 1px 0 rgba( 255, 255, 255, 0.4); 
+	font-size: 0.85em; 
+	color:#333;
+    	background: #F5F5F5;
+	text-shadow: 0px 2px 0px rgba( 255, 255, 255, 0.8);	
+        background: linear-gradient( #FFF, #CCC);
+}
+
+input[name=precedent]:hover{
+        background: #F8F8F8;
+}
+/*Page d'accueil*/
+
+h1{
+    font-family: 'Playball', cursive;
+}
+h2,h3,h4,h5{
+    font-family: 'Original Surfer', cursive;
+}
+
